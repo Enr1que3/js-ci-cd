@@ -21,7 +21,7 @@ jobs:
         #node-version-file: '.nvmrc'
         node-version: 18
     - name: 'install dependencies 🐱‍💻'
-      run: npm install, npm install jest --save-dev
+      run: npm install
 
     - name: 'build javascript 🐱‍👓'
       run: npm run build #&& find dist/main.js
