@@ -19,9 +19,6 @@ jobs:
     - name: 'install dependencies 🐱‍💻'
       run: npm ci
 
-    - name: 'build javascript 🐱‍👓'
-      run: npm run build
-
     - name: 'Lint code 🐱‍👤'
       run: npm run lint
 

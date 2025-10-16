@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "start": "node script.js",
-    "build": "echo 'build success"
+    "start": "node script.js"
   },
   "keywords": [],
   "author": "",
