@@ -11,6 +11,25 @@ jobs:
 
     runs-on: ubuntu-latest
     steps:
-    - name: 'hello world 👻'
-      run: echo 'Hello world!'
+    - name: 'Checkout 🐱‍👤'
+      uses: actions/checkout@v4
+    - name: 'set up de node 🐱‍🏍'
+      uses: actions/setup-node@v3
+
+      with:
+      # para especificar el nombre del archivo que va a usar
+        #node-version-file: '.nvmrc'
+        node-version: 18
+    - name: 'install dependencies 🐱‍💻'
+      run: npm install, npm install jest --save-dev
+
+    - name: 'build javascript 🐱‍👓'
+      run: npm run build #&& find dist/main.js
+
+    - name: 'Lint code 🐱‍👤'
+      run: npm run lint
+
+    - name: 'Run tests 🐱‍'
+      run: npm test
+      
     
