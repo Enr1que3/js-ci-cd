@@ -1,6 +1,3 @@
-#nombre del workflow, se  recomienda poner el mismo que el del archvio
-#cuando queremos que se este ejecuatando on:
-
 name: 'Node'
 
 on:
@@ -17,14 +14,13 @@ jobs:
       uses: actions/setup-node@v3
 
       with:
-      # para especificar el nombre del archivo que va a usar
-        #node-version-file: '.nvmrc'
+      
         node-version: 18
     - name: 'install dependencies 🐱‍💻'
-      run: npm install
+      run: npm ci
 
     - name: 'build javascript 🐱‍👓'
-      run: npm run build #&& find dist/main.js
+      run: npm run build
 
     - name: 'Lint code 🐱‍👤'
       run: npm run lint
