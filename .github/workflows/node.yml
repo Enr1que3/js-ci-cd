@@ -1,8 +1,8 @@
 #nombre del workflow, se  recomienda poner el mismo que el del archvio
+#cuando queremos que se este ejecuatando on:
 
 name: 'Node'
 
-#cuando queremos que se este ejecuatando
 on:
   push:
 
