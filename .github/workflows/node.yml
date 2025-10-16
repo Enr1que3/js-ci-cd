@@ -9,7 +9,7 @@ on:
 jobs:
   run:
 
-    run-on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
     - name: 'hello world 👻'
       run: echo 'Hello world!'
