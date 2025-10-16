@@ -1,0 +1,16 @@
+#nombre del workflow, se  recomienda poner el mismo que el del archvio
+
+name: 'Node'
+
+#cuando queremos que se este ejecuatando
+on:
+  push:
+
+jobs:
+  run:
+
+    run-on: ubuntu-latest
+    steps:
+    - name: 'hello world 👻'
+      run: echo 'Hello world!'
+    
